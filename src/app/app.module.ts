@@ -9,6 +9,8 @@ import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.co
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { HeaderComponent } from './composants/header/header.component';
+import { PageArticleComponent } from './pages/articles/page-article/page-article.component';
+import { DetailArticleComponent } from './composants/detail-article/detail-article.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HeaderComponent } from './composants/header/header.component';
     PageStatistiquesComponent,
     MenuComponent,
     HeaderComponent,
+    PageArticleComponent,
+    DetailArticleComponent,
   ],
   imports: [
     BrowserModule,
