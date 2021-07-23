@@ -30,6 +30,8 @@ import { NouvelleCategorieComponent } from './categories/nouvelle-categorie/nouv
 import { PageUtilsateurComponent } from './pages/page-utilsateur/page-utilsateur.component';
 import { DetailUtilisateurComponent } from './pages/detail-utilisateur/detail-utilisateur.component';
 import { NouvelUtilisateurComponent } from './pages/nouvel-utilisateur/nouvel-utilisateur.component';
+import { ProfilChangerMotDePComponent } from './pages/profil/profil-changer-mot-de-p/profil-changer-mot-de-p.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { NouvelUtilisateurComponent } from './pages/nouvel-utilisateur/nouvel-ut
     PageUtilsateurComponent,
     DetailUtilisateurComponent,
     NouvelUtilisateurComponent,
+    ProfilChangerMotDePComponent,
+    PageProfilComponent,
   ],
   imports: [
     BrowserModule,
