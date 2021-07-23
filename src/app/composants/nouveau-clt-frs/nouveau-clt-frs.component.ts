@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouveau-clt-frs',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouveauCltFrsComponent implements OnInit {
 
-  constructor() { }
+
+  origin = ''
+
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe( data =>{
+      this.origin= data.origin;
+    })
   }
-
+  cancel(): void{
+    if (this.origin=== 'client') {
+      this.router.navigate(['/']);
+    } else if (this.origin=== 'client') {
+      this.router.navigate(['/fournisseur']);
+    }
+  }
 }

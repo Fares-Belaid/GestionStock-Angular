@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-cmd-clt-frs',
@@ -8,12 +8,22 @@ import { Router } from '@angular/router';
 })
 export class PageCmdCltFrsComponent implements OnInit {
 
-  constructor(private router : Router) { }
+
+  origin = "";
+
+  constructor(private router : Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe(data => {
+      this.origin= data.origin;
+    })
   }
 
   nouvelleCommande(): void {
-    this.router.navigate(['nouvelleCommandeclt']);
+    if(this.origin === 'client'){
+      this.router.navigate(['nouvelleCommandeclt']);
+    } else if (this.origin === 'fournisseur') {
+      this.router.navigate(['nouvelleCommandefrs']);
+    }
   }
 }

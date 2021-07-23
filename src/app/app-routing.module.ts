@@ -32,25 +32,42 @@ const routes: Routes = [
             { path: 'mvtstk', component: PageMvtstkComponent},
             { path: 'clients', component: PageClientComponent},
             { path: 'fournisseurs', component: PageFournisseurComponent},
-            { path: 'nouveauclient', component: NouveauCltFrsComponent},
-            { path: 'nouveaufournisseur', component: NouveauCltFrsComponent},
-            { path: 'commandesclient', component: PageCmdCltFrsComponent},
-            { path: 'commandesfournisseur', component: PageCmdCltFrsComponent},
-            { path: 'nouvelleCommandeclt', component: NouvelleCmdCltFrsComponent},
-            { path: 'nouvelleCommandefrs', component: NouvelleCmdCltFrsComponent},
+            { path: 'nouveauclient', component: NouveauCltFrsComponent,
+                data : {
+                  origin: 'client'
+                }
+            },
+            { path: 'nouveaufournisseur', component: NouveauCltFrsComponent,
+                data: {
+                  origin: 'fournisseur'
+                }
+            },
+            { path: 'commandesclient', component: PageCmdCltFrsComponent, 
+                data: {
+                  origin: 'client'
+                 }
+            },
+            { path: 'commandesfournisseur', component: PageCmdCltFrsComponent,
+                data: {
+                  origin: 'fournisseur'
+                }
+          },
+            { path: 'nouvelleCommandeclt', component: NouvelleCmdCltFrsComponent,
+              data: {
+                origin: 'client'
+              }
+          },
+            { path: 'nouvelleCommandefrs', component: NouvelleCmdCltFrsComponent,
+              data: {
+                origin: 'fournisseur'
+            }
+          },
             { path: 'categories', component: PageCategoriesComponent},
             { path: 'nouvellecategorie', component: NouvelleCategorieComponent},
             { path: 'utilisateurs', component: PageUtilsateurComponent},
             { path: 'nouvelutilisateur', component: NouvelUtilisateurComponent},
             { path: 'profil', component: PageProfilComponent},
             { path: 'changermotdepasse', component: ProfilChangerMotDePComponent}
-
-
-
-
-
-
-
 
          ]
 },
