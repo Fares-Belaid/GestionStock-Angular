@@ -10,6 +10,7 @@ import { PageMvtstkComponent } from './pages/mvtstk/page-mvtstk/page-mvtstk.comp
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
+import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
 
 const routes: Routes = [
   {path: 'login' , component: PageLoginComponent},
@@ -25,7 +26,11 @@ const routes: Routes = [
             { path: 'clients', component: PageClientComponent},
             { path: 'fournisseurs', component: PageFournisseurComponent},
             { path: 'nouveauclient', component: NouveauCltFrsComponent},
-            { path: 'nouveaufournisseur', component: NouveauCltFrsComponent}
+            { path: 'nouveaufournisseur', component: NouveauCltFrsComponent},
+            { path: 'commandesclient', component: PageCmdCltFrsComponent,},
+            { path: 'commandesfournisseur', component: PageCmdCltFrsComponent,}
+
+
 
          ]
 },
