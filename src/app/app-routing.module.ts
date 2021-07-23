@@ -11,6 +11,7 @@ import { PageClientComponent } from './pages/client/page-client/page-client.comp
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
 import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
+import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
 
 const routes: Routes = [
   {path: 'login' , component: PageLoginComponent},
@@ -27,8 +28,12 @@ const routes: Routes = [
             { path: 'fournisseurs', component: PageFournisseurComponent},
             { path: 'nouveauclient', component: NouveauCltFrsComponent},
             { path: 'nouveaufournisseur', component: NouveauCltFrsComponent},
-            { path: 'commandesclient', component: PageCmdCltFrsComponent,},
-            { path: 'commandesfournisseur', component: PageCmdCltFrsComponent,}
+            { path: 'commandesclient', component: PageCmdCltFrsComponent},
+            { path: 'commandesfournisseur', component: PageCmdCltFrsComponent},
+            { path: 'nouvelleCommandeclt', component: NouvelleCmdCltFrsComponent},
+            { path: 'nouvelleCommandefrs', component: NouvelleCmdCltFrsComponent}
+
+
 
 
 
