@@ -27,6 +27,9 @@ import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-fr
 import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
 import { PageCategoriesComponent } from './categories/page-categories/page-categories.component';
 import { NouvelleCategorieComponent } from './categories/nouvelle-categorie/nouvelle-categorie.component';
+import { PageUtilsateurComponent } from './pages/page-utilsateur/page-utilsateur.component';
+import { DetailUtilisateurComponent } from './pages/detail-utilisateur/detail-utilisateur.component';
+import { NouvelUtilisateurComponent } from './pages/nouvel-utilisateur/nouvel-utilisateur.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,9 @@ import { NouvelleCategorieComponent } from './categories/nouvelle-categorie/nouv
     NouvelleCmdCltFrsComponent,
     PageCategoriesComponent,
     NouvelleCategorieComponent,
+    PageUtilsateurComponent,
+    DetailUtilisateurComponent,
+    NouvelUtilisateurComponent,
   ],
   imports: [
     BrowserModule,
